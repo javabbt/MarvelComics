@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">feature-home</string>
+    <string name="comics_image">L\'image de la bande dessinée devrait venir ici</string>
+
+    <string name="no_results">Veuillez essayer un autre terme de recherche</string>
+    <string name="title_activity_comics_list_feature">ComicsListFeatureActivity</string>
+    <string name="network_lost">😱 Oups! Connexion réseau perdue!"</string>
+    <string name="network_error">"😱 Oups! Il y a eu une erreur réseau ! Veuillez réessayer."</string>
+
+    <string name="search_hint">Entrez un titre de bande dessinée</string>
+</resources>

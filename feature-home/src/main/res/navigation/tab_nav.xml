@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_nav"
+    app:startDestination="@id/emptyFragment">
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.yannick.loic.feature_home.ui.views.EmptyFragment"
+        app:launchSingleTop="true"
+        app:popUpToInclusive="true"
+        android:label="EmptyFragment" >
+        <action
+            android:id="@+id/action_emptyFragment_to_comicsDetailFragment"
+            app:destination="@id/comicsDetailFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@+id/emptyFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/comicsDetailFragment"
+        android:name="com.yannick.loic.feature_home.ui.views.ComicsDetailFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/tab_nav"
+        app:popUpToInclusive="true"
+        android:label="ComicsDetailFragment" >
+        <action
+            android:id="@+id/action_comicsDetailFragment_to_tab_nav"
+            app:destination="@id/tab_nav"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/tab_nav"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
